@@ -16,7 +16,7 @@
 CREATE OR REPLACE DATABASE BugMe;
 
 CREATE OR REPLACE TABLE UserTable (
-    ID INT,
+    id INT,
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
     password_hash VARCHAR(64) NOT NULL,
@@ -44,16 +44,18 @@ CREATE OR REPLACE TABLE IssuesTable(
 For markers password is password123
  */
 INSERT INTO UserTable (id,firstname,lastname,password_hash,email,date_joined) VALUES 
-('1', 'Raman', 'Lewis', , 'admin@project2.com', '2020-11-24 22:16:00'),
-('2', 'Candice', 'Giselle', , 'admin@project2.com', '2020-11-20 14:30:00'),
-('3', 'Dexter', 'Small', , 'admin@project2.com', '2020-11-18 15:47:00'),
-('4', 'Sam', 'Soares', ,  'admin@project2.com', '2020-11-16 11:38:00');
+('1', 'Raman', 'Lewis', '', 'admin@project2.com', '2020-11-24 22:16:00'),
+('2', 'Candice', 'Giselle', '', 'admin@project2.com', '2020-11-20 14:30:00'),
+('3', 'Dexter', 'Small', '', 'admin@project2.com', '2020-11-18 15:47:00'),
+('4', 'Sam', 'Soares', '',  'admin@project2.com', '2020-11-16 11:38:00');
 
 INSERT INTO IssuesTable (title,description,type,status,assigned_to,created) VALUES 
+('#100','Add User Form','Bug','Open','1','2020-11-25 22:16:00'),
 ('#100','Add User Form','Bug','Open','1','2020-11-25 22:16:00');
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
 ;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
