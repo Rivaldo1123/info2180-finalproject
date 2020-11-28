@@ -47,7 +47,7 @@ INSERT INTO UserTable (id,firstname,lastname,password_hash,email,date_joined) VA
 ('1', 'Raman', 'Lewis', '', 'admin@project2.com', '2020-11-24 22:16:00'),
 ('2', 'Candice', 'Giselle', '', 'admin@project2.com', '2020-11-20 14:30:00'),
 ('3', 'Dexter', 'Small', '', 'admin@project2.com', '2020-11-18 15:47:00'),
-('4', 'Sam', 'Soares', '',  'admin@project2.com', '2020-11-16 11:38:00');
+('4', 'Samara', 'Soares', '',  'admin@project2.com', '2020-11-16 11:38:00');
 
 INSERT INTO IssuesTable (title,description,type,status,assigned_to,created) VALUES 
 ('#100','Add User Form','Bug','Open','1','2020-11-25 22:16:00'),
