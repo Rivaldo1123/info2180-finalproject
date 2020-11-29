@@ -1,35 +1,6 @@
 'user strict'
 
-/* Please Read Before starting to edit this file! 
-
-	use variable names like this:
-	
-	first_name, user_name, middle_name
-
-	for functions please use camal case:
-	
-	functionName(), deleteUser(), addUser()
-
-*/
-
-// How to write a function
-
-// Please follow this guide when on how to comment a function: 
-
-/**
- * Say what the functions does, eg.. This function calculates the total of two numbers
- * @param {number} a number to add.
- * @param {string} b number to add.
- * @return The sum of the two parameters.
-*/
-function calculateTwoNumbers(a, b) {
-	return a + b;
-}
-
-// Example end // 
-
-
-
+ 
 window.onload = function() {
 	main();
 }
