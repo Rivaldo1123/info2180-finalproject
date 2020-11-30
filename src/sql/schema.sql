@@ -5,17 +5,17 @@
  Host: 127.0.0.1
  Generation Time: 
  Server version: 10.4.16-MariaDB
- PHP Version: 7.4.12
+ PHP Version: 7.4.12 
 
- Database: BugMe
-
-
- Table structure for table UserTable
  */
 
-CREATE OR REPLACE DATABASE BugMe;
+-- Database: BugMe;
 
-CREATE OR REPLACE TABLE UserTable (
+CREATE DATABASE IF NOT EXISTS BugMe;
+
+-- Table structure for UserTable;
+
+CREATE TABLE IF NOT EXISTS UserTable (
     id INT,
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
@@ -25,7 +25,7 @@ CREATE OR REPLACE TABLE UserTable (
     PRIMARY KEY (id)
 ) ENGINE = MyISAM AUTO_INCREMENT = 4080 DEFAULT CHARSET = utf8mb4;
 
-CREATE OR REPLACE TABLE IssuesTable(
+CREATE TABLE IF NOT EXISTS  IssuesTable(
     id INT AUTO_INCREMENT,
     title VARCHAR(64),
     description TEXT(100),
@@ -50,7 +50,6 @@ INSERT INTO UserTable (id,firstname,lastname,password_hash,email,date_joined) VA
 ('4', 'Samara', 'Soares', '',  'admin@project2.com', '2020-11-16 11:38:00');
 
 INSERT INTO IssuesTable (title,description,type,status,assigned_to,created) VALUES 
-('#100','Add User Form','Bug','Open','1','2020-11-25 22:16:00'),
 ('#100','Add User Form','Bug','Open','1','2020-11-25 22:16:00');
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
