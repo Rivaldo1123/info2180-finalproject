@@ -34,14 +34,26 @@ function addUserFormValidation(first_name, last_name, password, email) {
     var password = document.getElementById('password').value;
     var email = document.getElementById('email').value;
 
-    if (first_name == '' || last_name == '' || password == '' || email == '') {
-        return false
+    if (first_name != '' && last_name != '' && password != '' && email != '') {
+        if (emailRegex.test(email)) {
+            return true
+        }
     }
-    return true
+    return false
 }
 
 function newIssueFormValidation() {
     // checks to see if values are correct then return true or false if the incorrect
+    var title = document.getElementById('title').value;
+    var description = document.getElementById('description').value;
+    var assigned_to = document.getElementById('assigned_to').value;
+    var type = document.getElementById('type').value;
+    var priority = document.getElementById('priority').value;
+
+    if (title == '' && description == '' && assigned_to == '' && type == '' && priority == '') {
+        return false
+    }
+    return true;
 }
 
 
