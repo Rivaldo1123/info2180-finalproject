@@ -3,6 +3,8 @@ CREATE DATABASE IF NOT EXISTS BugMe;
 USE BugMe;
 -- Database: BugMe;
 
+GRANT ALL PRIVILEGES ON BugMe.* TO 'admin'@'localhost' IDENTIFIED BY 'password123';
+
 -- Table structure for UserTable;
 
 CREATE TABLE IF NOT EXISTS UserTable (
