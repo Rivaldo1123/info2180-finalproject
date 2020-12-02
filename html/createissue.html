@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="stylesheet" href=" ">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="bug.png" alt="Bug Logo" height="50" width="50">
+            <h3>BugMe Issue Tracker</h3>
+        </div>
+    </header>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><img src="home.png" alt="Home logo" height="25" width="25"><a href="#">Home</a></li>
+                <li><img src="newuser.png" alt="Add User logo" height="25" width="25"><a href="newuser.html">Add User</a></li>
+                <li><img src="add.png" alt="New Issue logo" height="25" width="25"><a href="#">New Issue</a></li>
+                <li><img src="logout.png" alt="Logout logo" height="25" width="25"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+            <h1>Create Issue</h1>
+            <form id="f1" action="" method="post">
+                <div class="field">
+                    <label for= "title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="field">
+                    <label for="description">Description</label>
+                    <textarea name="description" rows="5" cols=""></textarea>
+                    <!--<input type="text" id="description" name="description" required>-->
+                    <!--You can choose to either use the textarea or edit the size of the input area to look like the wireframe-->
+                </div>
+                <!--<div class="field">
+                    <label for="assigned">Assigned To</label>
+                    <select id="assigned" name="assigned">
+                       
+                    </select>
+                </div>-->
+                <!--This requires PHP & SQL to do-->
+                <div class="field">
+                    <label for="type">Type</label>
+                    <select id="type" name="type" required>
+                        <option value="bug">Bug</option>
+                        <option value="proposal">Proposal</option>
+                        <option value="task">Task</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required>
+                        <option value="minor">Minor</option>
+                        <option value="major">Major</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </div>
+                <button type ="submit" name="submitButton" class="button">Submit</button>
+            </form>
+        </div>
+    </main> 
+</body>
+</html>
