@@ -1,0 +1,1 @@
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON BugMe.* TO 'finalprojectadmin'@'localhost' IDENTIFIED BY 'admin123';
